@@ -26,6 +26,8 @@ def max_division_by_3(num):
                 lst.append(value)
         divider1 *= 10
         divider2 *= 10
+    while lst.count(num) > 0:
+        lst.remove(num)
     new_num = max(lst)
     return new_num
 
